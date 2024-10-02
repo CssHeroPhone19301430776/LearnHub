@@ -8,4 +8,8 @@ defineProps<{
   <div class="main">{{ msg }}</div>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.main {
+  color: red;
+}
+</style>
