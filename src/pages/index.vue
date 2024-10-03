@@ -5,6 +5,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 <template>
   <main>
     <HelloWorld msg="Vite + Vue" />
+    <h1 class="text-3xl text-[#bfa] font-bold underline">Hello TailWind!</h1>
   </main>
 </template>
 
