@@ -24,6 +24,9 @@ importers:
         specifier: ^4.3.3
         version: 4.4.5(vue@3.5.10(typescript@5.4.5))
     devDependencies:
+      '@iconify/json':
+        specifier: ^2.2.256
+        version: 2.2.256
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
         version: 1.10.4
@@ -36,6 +39,9 @@ importers:
       '@types/node':
         specifier: ^20.14.5
         version: 20.16.10
+      '@unocss/preset-icons':
+        specifier: ^0.63.2
+        version: 0.63.2
       '@unocss/preset-wind':
         specifier: ^0.63.2
         version: 0.63.2
@@ -571,6 +577,9 @@ packages:
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
+
+  '@iconify/json@2.2.256':
+    resolution: {integrity: sha512-u2RwfBUuDE3A8qx3vnXdcJMtirHc9QrRRULfGY6Il6/K76Odfrm4yVqS/fYIh+wXwWl/fZdAZEozqxpZftfnIQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3403,6 +3412,11 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/object-schema@2.0.3': {}
+
+  '@iconify/json@2.2.256':
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 1.1.2
 
   '@iconify/types@2.0.0': {}
 
