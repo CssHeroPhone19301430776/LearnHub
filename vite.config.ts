@@ -11,6 +11,8 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import Layouts from 'vite-plugin-vue-layouts'
 
+import { viteMockServe } from 'vite-plugin-mock'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   css: {
@@ -49,7 +51,8 @@ export default defineConfig({
     Layouts({
       layoutsDirs: 'src/layouts',
       defaultLayout: 'default'
-    })
+    }),
+    viteMockServe({ mockPath: 'mock', enable: true })
   ],
   resolve: {
     alias: {
