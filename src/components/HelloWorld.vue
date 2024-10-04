@@ -2,6 +2,10 @@
 defineProps<{
   msg: string
 }>()
+
+defineEmits<{
+  (e: 'change', id: number): void
+}>()
 </script>
 
 <template>

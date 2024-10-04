@@ -1,0 +1,8 @@
+<template>
+  <div>default</div>
+  <RouterView />
+</template>
+
+<script setup></script>
+
+<style lang="scss" scoped></style>

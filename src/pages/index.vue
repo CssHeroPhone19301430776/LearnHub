@@ -9,3 +9,8 @@
 </template>
 
 <style lang="sass" scoped></style>
+
+<route lang="yaml">
+meta:
+  layout: default
+</route>
