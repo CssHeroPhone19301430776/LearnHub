@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import { useRouterParams } from '@/utils'
 
-const route = useRoute()
-const routeParams = route.params as { id: string }
+const routeParams = useRouterParams<{ id: string }>()
 
-console.log(routeParams.id)
+console.log(routeParams.value.id)
 </script>
 
 <template>

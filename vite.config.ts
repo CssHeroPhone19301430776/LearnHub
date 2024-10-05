@@ -28,6 +28,7 @@ export default defineConfig({
     }),
     vue(),
     vueJsx(),
+    Layouts(),
     UnoCSS(),
     AutoImport({
       // targets to transform
@@ -48,10 +49,7 @@ export default defineConfig({
       dts: true
     }),
     Components({}),
-    Layouts({
-      layoutsDirs: 'src/layouts',
-      defaultLayout: 'default'
-    }),
+
     viteMockServe({ mockPath: 'mock', enable: true })
   ],
   resolve: {

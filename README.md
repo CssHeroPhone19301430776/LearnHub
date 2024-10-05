@@ -1,5 +1,6 @@
 # learn_hub
 
+你现在浏览的是Learn_hub的官网项目
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup

@@ -48,6 +48,9 @@ importers:
       '@unocss/preset-wind':
         specifier: ^0.63.2
         version: 0.63.2
+      '@unocss/transformer-directives':
+        specifier: ^0.63.3
+        version: 0.63.3
       '@vitejs/plugin-vue':
         specifier: ^5.0.5
         version: 5.1.4(vite@5.4.8(@types/node@20.16.10)(sass@1.79.4))(vue@3.5.10(typescript@5.4.5))
@@ -869,6 +872,9 @@ packages:
   '@unocss/core@0.63.2':
     resolution: {integrity: sha512-S262ISnTkr6LSyNPXCWBZhHF49lD2snSHUJLXmmATnb2JpCRu/mMUvxJmsk9dPlsH3Ioa35Lw9sMiDWAZ9L5Gw==}
 
+  '@unocss/core@0.63.3':
+    resolution: {integrity: sha512-LPDog+Dt36ut9yomgpKDHn4j/kI72sWtxm3iL6agEK3NDQToQsizQU6f8ZsIyUrpi7CoIV2i+3vmsdxauBd4kw==}
+
   '@unocss/extractor-arbitrary-variants@0.63.2':
     resolution: {integrity: sha512-uNf3oe42OA5YGhkDoYv5UewGY5RIbW/7ctynIeWEYKTshzsRrRiDc4rYWSriU4yBSRzKVvyxdNN61s9Jz1huZw==}
 
@@ -912,6 +918,10 @@ packages:
     resolution: {integrity: sha512-PeW1wVGG/tJSW9GpxbjyGNQvV2UDDMu/FU5ohkYz9CeGcHOGHw8gdlnH+9IT1hbQ6koVKNavhvKEQkXH1++FBg==}
     engines: {node: '>=14'}
 
+  '@unocss/rule-utils@0.63.3':
+    resolution: {integrity: sha512-DVX9d/72fsQz4qD67C+NIiMEhtpre6xJDISvxZgb165UzzW8k9rUTef4uWz0SRv+O5NdotpBl32UT8X9McP9Mg==}
+    engines: {node: '>=14'}
+
   '@unocss/transformer-attributify-jsx@0.63.2':
     resolution: {integrity: sha512-RPQqtJf1Z+S6D9cpNZmiycOc3ZQatyIkne3W7Aw+QVvlWziRPLZJbw7lU123JUdmKfoop8GQmii5a6sbUdjhuw==}
 
@@ -920,6 +930,9 @@ packages:
 
   '@unocss/transformer-directives@0.63.2':
     resolution: {integrity: sha512-i5Lq6hayIgrqsWkLwuTep6FM/vM4MQyAsOGecxtJ9yeABMdFNxEehX6Gwy19tzWvD09hHJ9YOOKDfx9OYg1bag==}
+
+  '@unocss/transformer-directives@0.63.3':
+    resolution: {integrity: sha512-nQtxl/7kfG4OJbFq86E1HpY3v8pfEQd664dajxzaZ9kTyTGQhpYWTBgT5zkY5/9/svDuTZ9dPIMU+8CyQnVopQ==}
 
   '@unocss/transformer-variant-group@0.63.2':
     resolution: {integrity: sha512-vjjXlL4GEgBj6YPj2g7RzvzihE8tV2v8tOEm6LM+WOhJ8/DALe9CbAvjtCShV1pNNBYkzMdBOqiGIDzUkJTqnw==}
@@ -3786,6 +3799,8 @@ snapshots:
 
   '@unocss/core@0.63.2': {}
 
+  '@unocss/core@0.63.3': {}
+
   '@unocss/extractor-arbitrary-variants@0.63.2':
     dependencies:
       '@unocss/core': 0.63.2
@@ -3860,6 +3875,11 @@ snapshots:
       '@unocss/core': 0.63.2
       magic-string: 0.30.11
 
+  '@unocss/rule-utils@0.63.3':
+    dependencies:
+      '@unocss/core': 0.63.3
+      magic-string: 0.30.11
+
   '@unocss/transformer-attributify-jsx@0.63.2':
     dependencies:
       '@unocss/core': 0.63.2
@@ -3872,6 +3892,12 @@ snapshots:
     dependencies:
       '@unocss/core': 0.63.2
       '@unocss/rule-utils': 0.63.2
+      css-tree: 3.0.0
+
+  '@unocss/transformer-directives@0.63.3':
+    dependencies:
+      '@unocss/core': 0.63.3
+      '@unocss/rule-utils': 0.63.3
       css-tree: 3.0.0
 
   '@unocss/transformer-variant-group@0.63.2':

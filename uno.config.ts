@@ -1,8 +1,7 @@
 // uno.config.ts
 import presetWind from '@unocss/preset-wind'
 import presetIcons from '@unocss/preset-icons'
-// import { presetIcons, presetWind } from 'unocss'
-import { defineConfig } from 'unocss'
+import { defineConfig, transformerDirectives } from 'unocss'
 
 export default defineConfig({
   presets: [
@@ -14,5 +13,6 @@ export default defineConfig({
         'vertical-align': 'middle'
       }
     })
-  ]
+  ],
+  transformers: [transformerDirectives()]
 })
