@@ -14,5 +14,8 @@ export default defineConfig({
       }
     })
   ],
-  transformers: [transformerDirectives()]
+  transformers: [transformerDirectives()],
+  shortcuts: {
+    'bg-image': 'w-full h-full bg-cover bg-center-top bg-no-repeat'
+  }
 })
