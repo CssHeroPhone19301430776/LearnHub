@@ -1,3 +1,8 @@
+<template>
+  <Swiper :swiperList="swiperList" />
+  <Card :image="bg" />
+</template>
+
 <script setup lang="ts">
 import type { SwiperItems } from '@/components/type'
 import bg from '@/assets/images/bg.png'
@@ -19,10 +24,6 @@ const swiperList: SwiperItems[] = [
   }
 ]
 </script>
-
-<template>
-  <Swiper :swiperList="swiperList" />
-</template>
 
 <style lang="sass" scoped></style>
 
